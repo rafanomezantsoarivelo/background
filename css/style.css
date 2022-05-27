@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*background: #f7f7f7;*/
+
+}@media (max-width: 360px) {
+
+    body {
+        display: flex; 
+        
+    }
+
+}@media (max-width: 720px) {
+    body {
+    }
+
+}
+
+
+
+
+.wrapper {
+    background: #fff;
+    width: 450px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+}@media (max-width: 360px) {
+
+    .wrapper {
+        border-radius: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+}@media (max-width: 720px) {
+    .wrapper {
+        border-radius: none;
+        box-shadow: none;
+    }
+
+}
+
+/*sing up form code*/
+
+.form {
+    padding: 25px;
+}
+
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.form form {
+    margin: 20px;
+}
+
+.form form .error-txt {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form form .field input {
+    width: 100%;
+    height: 40px;
+}
+
+.form form .name-details {
+    display: flex;
+
+}
+
+.form form .name-details .last {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.form form .name-details .lest {
+    width: 100%;
+}
+
+.form form .imags {
+    font-size: 17px;
+
+}
+
+.link {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e6e6e6;
+
+}
+
+.link a:hover {
+    text-decoration: underline;
+
+}
+
+.users {
+    padding: 25px 30px;
+}
+
+.users header,
+.users-list a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.users header .content,
+.users-list .content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.users header .content .details,
+.users-list .content .details {
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.users .logout {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.users header .content img {
+    height: 70px;
+    width: 70px;
+}
+
+.users .search {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.users .search .text {
+    font-size: 18px;
+}
+
+.users .search input {
+
+    height: 42px;
+    width: 86%;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.users .search button {
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #333;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.users-list {
+    max-height: 300px;
+    overflow: auto;
+    margin-right: 12px;
+
+}
+
+.users-list::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 3px;
+}
+
+.users-list:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 107, 107);
+}
+
+.users-list a .content img {
+    height: 70px;
+    width: 70px;
+}
+
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+}
+
+.chat-area header .back-icon {
+    font-size: 16px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header img {
+    height: 70px;
+    width: 70px;
+}
+
+.chat-area header span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-area header .details {
+    margin-left: 50px;
+}
+
+.status-dot {
+    padding: 0 20px;
+    font-size: 10px;
+}
+
+.chat-box {
+    padding: 30px;
+}
+
+.chat-box .incoming {
+    float: right;
+    background-color: #ccc;
+    border-radius: 20px 20px 0px 20px;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.chat-box .outgoing {
+    float: left;
+    background-color: #ccc;
+    border-radius: 20px 20px 20px 20px;
+    width: 60%;
+    text-align: center;
+    font-size: 17px;
+}
